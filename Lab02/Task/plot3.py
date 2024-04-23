@@ -25,7 +25,7 @@ ax.set_zlim(-3, 3)
 ax.quiver(tail_x, tail_y, tail_z, xs, ys, zs, color='r')
 
 for i in range(200):
-    a, b = np.random.rand(2)
+    a, b = np.random.randn(2)
     w = a * u + b * v
     tail_w = [0, 0, 0]
     # ax.quiver(tail_w[0],tail_w[1],tail_w[2],[w[0]], [w[1]], [w[2]], color='b')

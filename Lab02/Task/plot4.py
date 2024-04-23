@@ -6,6 +6,8 @@ from mpl_toolkits.mplot3d import Axes3D
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 
+# fig, ax = plt.subplots(1,1, subplot_kw={'projection': '3d'}) 
+
 u = np.array([1, 2, 3])
 v = np.array([2.0, 0, -2])
 
@@ -15,8 +17,9 @@ print(rng)
 print(rng2)
 
 
-for alpha in rng2:
-    ax.cla()
+for alpha in rng:
+
+    # ax.cla()
     w = (1-alpha) * u + alpha * v
 
     ax.set_xlim(-3, 3)
@@ -28,8 +31,9 @@ for alpha in rng2:
 
     ax.quiver(0, 0, 0, u[0], u[1], u[2], color='r')
     ax.quiver(0, 0, 0, v[0], v[1], v[2], color='r')
-    plt.draw()
-    plt.pause(.1)
+
+    # plt.draw()
+    # plt.pause(.1)
+
 
 plt.show()
-
