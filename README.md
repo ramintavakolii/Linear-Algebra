@@ -1,4 +1,4 @@
-#Linear Algebra Laboratories
+# Linear Algebra Laboratories
 
 In the latter half of 2023, I completed a series of laboratories for the Linear Algebra course in Computer Engineering at KNTU University under the mentorship of Dr. Behrouz Nasihat Kon.
 
